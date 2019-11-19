@@ -12,14 +12,34 @@ import MainScreen from './src/screens//Main'
 // create our app's navigation stack
 const App = createStackNavigator(
 	{
-		Loading: LoadingScreen,
-		SignUp: SignUpScreen,
-		Login: LoginScreen,
-		Main: MainScreen
+		Loading: {
+			screen: LoadingScreen,
+			navigationOptions: {
+				header: null
+			}
+		},
+		SignUp: {
+			screen: SignUpScreen,
+			navigationOptions: {
+				header: null
+			}
+		},
+		Login: {
+			screen: LoginScreen,
+			navigationOptions: {
+				header: null
+			}
+		},
+		Main: {
+			screen: MainScreen,
+			navigationOptions: {
+				header: null
+			}
+		}
 	},
 	{
 		initialRouteName: 'Loading',
-	}
+	},
 )
 
 export default createAppContainer(App)
