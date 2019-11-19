@@ -34,6 +34,15 @@ target 'Ratatouille' do
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
+
+
+
+  pod 'RNFirebase', :path => '../node_modules/react-native-firebase'
+
+  pod 'RNGestureHandler', :path => '../node_modules/react-native-gesture-handler'
+
+  pod 'react-native-maps', :path => '../node_modules/react-native-maps'
+
   target 'RatatouilleTests' do
     inherit! :search_paths
     # Pods for testing
